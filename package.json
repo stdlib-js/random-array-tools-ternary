@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-array-tools-ternary",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Constructor for creating arrays filled with pseudorandom values drawn from a ternary PRNG.",
   "license": "Apache-2.0",
   "author": {
