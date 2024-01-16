@@ -35,14 +35,30 @@ limitations under the License.
 
 > Constructor for creating arrays filled with pseudorandom values drawn from a ternary PRNG.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-tools-ternary
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary@esm/index.mjs';
+var Random = require( '@stdlib/random-array-tools-ternary' );
 ```
 
 #### Random( prng, dtypes, dtype )
@@ -50,7 +66,7 @@ import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ter
 Constructor for creating arrays filled with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@esm/index.mjs';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -69,7 +85,7 @@ The constructor has the following parameters:
 Returns an array filled with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@esm/index.mjs';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -95,7 +111,7 @@ The method accepts the following options:
 By default, the method returns an array having the default output array data type. To override the default, set the `dtype` option.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@esm/index.mjs';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -113,8 +129,8 @@ var v = random.generate( 10, 2.0, 5.0, 3.33, {
 Fills an array with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
+var triangular = require( '@stdlib/random-base-triangular' );
+var zeros = require( '@stdlib/array-zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -154,15 +170,10 @@ The method has the following parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary@esm/index.mjs';
+```javascript
+var triangular = require( '@stdlib/random-base-triangular' );
+var dtypes = require( '@stdlib/array-dtypes' );
+var Random = require( '@stdlib/random-array-tools-ternary' );
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 var random = new Random( triangular, dt, 'float64' );
@@ -179,10 +190,6 @@ x = random.generate( 10, 2.0, 5.0, 3.33, {
     'dtype': 'generic'
 });
 // returns [...]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -206,7 +213,7 @@ x = random.generate( 10, 2.0, 5.0, 3.33, {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -236,8 +243,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-array-tools-ternary.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-array-tools-ternary
 
-[test-image]: https://github.com/stdlib-js/random-array-tools-ternary/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/random-array-tools-ternary/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/random-array-tools-ternary/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/random-array-tools-ternary/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-array-tools-ternary/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-array-tools-ternary?branch=main
