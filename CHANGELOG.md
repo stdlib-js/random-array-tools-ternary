@@ -1,0 +1,78 @@
+# CHANGELOG
+
+> Package changelog.
+
+<section class="release" id="v0.2.2">
+
+## 0.2.2 (2024-07-29)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.1">
+
+## 0.2.1 (2024-02-25)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-15)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2024-01-16)
+
+<section class="features">
+
+### Features
+
+-   [`292f38d`](https://github.com/stdlib-js/stdlib/commit/292f38dd36220ad0e6aa869e72a79ff6d3715b88) - add `random/array/tools/ternary`
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`292f38d`](https://github.com/stdlib-js/stdlib/commit/292f38dd36220ad0e6aa869e72a79ff6d3715b88) - **feat:** add `random/array/tools/ternary` _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
