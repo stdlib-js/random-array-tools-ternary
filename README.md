@@ -35,32 +35,14 @@ limitations under the License.
 
 > Constructor for creating arrays filled with pseudorandom values drawn from a ternary PRNG.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-array-tools-ternary
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var Random = require( '@stdlib/random-array-tools-ternary' );
+import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary@deno/mod.js';
 ```
 
 #### Random( prng, dtypes, dtype )
@@ -68,7 +50,7 @@ var Random = require( '@stdlib/random-array-tools-ternary' );
 Constructor for creating arrays filled with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -87,7 +69,7 @@ The constructor has the following parameters:
 Returns an array filled with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -113,7 +95,7 @@ The method accepts the following options:
 By default, the method returns an array having the default output array data type. To override the default, set the `dtype` option.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -131,8 +113,8 @@ var v = random.generate( 10, 2.0, 5.0, 3.33, {
 Fills an array with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
-var zeros = require( '@stdlib/array-zeros' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 var defaultDType = 'float64';
@@ -173,9 +155,9 @@ The method has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var triangular = require( '@stdlib/random-base-triangular' );
-var dtypes = require( '@stdlib/array-dtypes' );
-var Random = require( '@stdlib/random-array-tools-ternary' );
+import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
+import Random from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary@deno/mod.js';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 var random = new Random( triangular, dt, 'float64' );
@@ -215,7 +197,7 @@ x = random.generate( 10, 2.0, 5.0, 3.33, {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
